@@ -3,7 +3,7 @@ export default {
   title: 'privacyPolicy',
   type: 'document',
   fields: [
-    { name: 'header', type: 'string', title: 'Header' },
-    { name: 'content', type: 'blockContent', title: 'Content' },
+    { name: 'header', type: 'localeString', title: 'Header' },
+    { name: 'content', type: 'localeBlockContent', title: 'Content' },
   ]
 }

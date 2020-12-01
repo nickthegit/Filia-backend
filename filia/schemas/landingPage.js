@@ -8,8 +8,8 @@ export default {
       name: 'header',
       type: 'object',
       fields: [
-        { name: 'headerBtnText', type: 'string', title: 'Header Sign Up Text' },
-        { name: 'headerContactText', type: 'string', title: 'Header Contact Text' },
+        { name: 'headerBtnText', type: 'localeString', title: 'Header Sign Up Text' },
+        { name: 'headerContactText', type: 'localeString', title: 'Header Contact Text' },
       ]
     },
     {
@@ -17,9 +17,9 @@ export default {
       name: 'section1',
       type: 'object',
       fields: [
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'productOffer', type: 'blockContentBasic', title: 'Product Offer' },
-        { name: 'btnText', type: 'string', title: 'Hero Sign Up Text' },
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'productOffer', type: 'localeBlockContent', title: 'Product Offer' },
+        { name: 'btnText', type: 'localeString', title: 'Hero Sign Up Text' },
       ]
     },
     {
@@ -28,9 +28,9 @@ export default {
       type: 'object',
       fields: [
         { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } },
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'copy', type: 'blockContentBasic', title: 'Copy' },
-        { name: 'btnText', type: 'string', title: 'Intro Sign Up Text' },
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' },
+        { name: 'btnText', type: 'localeString', title: 'Intro Sign Up Text' },
       ]
     },
     {
@@ -40,11 +40,11 @@ export default {
       fields: [
         { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } },
         {
-          name: 'highlights', type: 'array', title: 'Highlights', options: { layout: 'grid' }, of: [
+          name: 'highlights', type: 'array', title: 'Highlights', of: [
             {
               name: 'highlight', type: 'object', title: 'Highlight', fields: [
-                { name: 'title', type: 'string', title: 'Title' },
-                { name: 'copy', type: 'blockContentBasic', title: 'Copy' }
+                { name: 'title', type: 'localeString', title: 'Title' },
+                { name: 'copy', type: 'localeBlockContent', title: 'Copy' }
               ]
             }
           ],
@@ -62,14 +62,14 @@ export default {
           name: 'benefits', type: 'array', title: 'Benefits', of: [
             {
               name: 'benefit', type: 'object', title: 'Benefit', fields: [
-                { name: 'title', type: 'string', title: 'Title' },
-                { name: 'copy', type: 'blockContentBasic', title: 'Copy' }
+                { name: 'title', type: 'localeString', title: 'Title' },
+                { name: 'copy', type: 'localeBlockContent', title: 'Copy' }
               ]
             }
           ],
           validation: Rule => Rule.min(1).max(6)
         },
-        { name: 'btnText', type: 'string', title: 'Sign Up Text' },
+        { name: 'btnText', type: 'localeString', title: 'Sign Up Text' },
       ]
     },
     {
@@ -77,9 +77,9 @@ export default {
       name: 'section5',
       type: 'object',
       fields: [
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'copy', type: 'blockContentBasic', title: 'Copy' },
-        { name: 'btnText', type: 'string', title: 'Sign Up Text' },
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' },
+        { name: 'btnText', type: 'localeString', title: 'Sign Up Text' },
       ]
     },
     {
@@ -88,8 +88,8 @@ export default {
       type: 'object',
       fields: [
         { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } },
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'copy', type: 'blockContentBasic', title: 'Copy' }
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' }
       ]
     },
     {
@@ -97,9 +97,9 @@ export default {
       name: 'newsletter',
       type: 'object',
       fields: [
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'checkboxCopy', type: 'blockContentBasic', title: 'Checkbox Copy' },
-        { name: 'copy', type: 'blockContentBasic', title: 'Copy' }
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'checkboxCopy', type: 'localeBlockContent', title: 'Checkbox Copy' },
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' }
       ]
     },
     {
@@ -107,8 +107,8 @@ export default {
       name: 'contact',
       type: 'object',
       fields: [
-        { name: 'headline', type: 'string', title: 'Headline' },
-        { name: 'copy', type: 'blockContentBasic', title: 'Copy' },
+        { name: 'headline', type: 'localeString', title: 'Headline' },
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' },
         { name: 'instagram', type: 'string', title: 'Instagram Link' },
         { name: 'twitter', type: 'string', title: 'Twitter Link' },
       ]
