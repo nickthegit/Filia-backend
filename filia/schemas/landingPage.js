@@ -99,7 +99,10 @@ export default {
       fields: [
         { name: 'headline', type: 'localeString', title: 'Headline' },
         { name: 'checkboxCopy', type: 'localeBlockContent', title: 'Checkbox Copy' },
-        { name: 'copy', type: 'localeBlockContent', title: 'Copy' }
+        { name: 'copy', type: 'localeBlockContent', title: 'Copy' },
+        { name: 'inputName', type: 'localeString', title: 'Input Name' },
+        { name: 'inputEmail', type: 'localeString', title: 'Input Email' },
+        { name: 'subscribeBtn', type: 'localeString', title: 'Subscribe button text' },
       ]
     },
     {
@@ -111,6 +114,7 @@ export default {
         { name: 'copy', type: 'localeBlockContent', title: 'Copy' },
         { name: 'instagram', type: 'string', title: 'Instagram Link' },
         { name: 'twitter', type: 'string', title: 'Twitter Link' },
+        { name: 'facebook', type: 'string', title: 'Facebook Link' },
       ]
     },
   ],
