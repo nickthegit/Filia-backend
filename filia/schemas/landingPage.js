@@ -115,6 +115,7 @@ export default {
         { name: 'instagram', type: 'string', title: 'Instagram Link' },
         { name: 'twitter', type: 'string', title: 'Twitter Link' },
         { name: 'facebook', type: 'string', title: 'Facebook Link' },
+        { name: 'linkedin', type: 'string', title: 'Linkedin Link' },
       ]
     },
   ],
